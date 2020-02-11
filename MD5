@@ -1,0 +1,14 @@
+64787fc1d9fcdc15cb4f87905ddd0a8c *DESCRIPTION
+6b2e48c6e0ecfe75d4c6dd00caa5a8cd *NAMESPACE
+60c5979d83db5c382c8e6f8aee6e0da0 *R/mardia.R
+ee71ee250616397103311d0200a47c21 *R/mnonr.R
+6cf0900f8b2f09fbd9855aab4cb065e3 *R/unonr.R
+410e325828535995b5efed394fea9850 *build/vignette.rds
+0333bc24ae91eb59feef0d1a71ba6b0b *inst/doc/mnonr.R
+9ac8b9046534896b2663e5dd1c53dbf8 *inst/doc/mnonr.Rmd
+f509337cf2419cd429e8653398ef59bf *inst/doc/mnonr.html
+c9ae31e801d347aaba4db1cd92f99abf *man/mardia.Rd
+7d4ed0fa31cb82e462b1cb3f70714e2f *man/mnonr.Rd
+62c52e671a0d0a11b3f938746f867fdd *man/unonr.Rd
+9ac8b9046534896b2663e5dd1c53dbf8 *vignettes/mnonr.Rmd
+08620c562a3cc4aa799d8e60daafafda *vignettes/non-normal.bib

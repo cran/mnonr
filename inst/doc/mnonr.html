@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Reference</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<p>Non-normal data is everywhere. In order to test the influence of the non-normality on your model, you may what to generate some non-normal data first. The existing methods of generating multivariate non-normal data typically create data according to specific univariate marginal measures such as the univariate skewness and kurtosis, like the widely-used Vale and Maurelli&#39;s method[@vale83], but not multivariate measures such as Mardia’s skewness and kurtosis [@mardia70]. We create a new method of generating multivariate non-normal data with given multivariate skewness and kurtosis [@qu19]. </p>
+
+<p>The goal of mnonr package is to give you a simple and quick way to generate multivariate non-normal data with pre-specified multivariate measures (skewness and kurtosis).</p>
+
+<p>The package consists of three functions: </p>
+
+<ul>
+<li><p><strong>mnonr</strong>: a function that can generate multivariate data with pre-specified multivariate skewness and kurtosis;</p></li>
+<li><p><strong>unonr</strong>: a function that can generate multivariate data with pre-specified marginal skewness and kurtosis;</p></li>
+<li><p><strong>mardia</strong>: a function that can check univariate and multivariate skewness and kurtosis.</p></li>
+</ul>
+
+<p>The functions are easy to use. As for <strong>mnonr</strong>, along with multivariate skewness and kurtosis, you can also specify sample size, number of variables, covariance matrix, and initial start values. The initial start values of a vector with 3 numbers for polynomial coefficients&#39; (b,c,d) (the default setting is (0.9,0.4,0)) will yield different coefficient sets which could affect the multivariate skewness and kurtosis (more details are in the paper @qu19). We recommend that users should try with different start values in data simulation.</p>
+
+<p>The <strong>unonr</strong> function is copied from <strong>mvrnonnorm</strong> function in the <em>semTools</em> package [@semtools].</p>
+
+<p>The <strong>mardia</strong> can return the result of both marginal and multivariate skewness and kurtosis.</p>
+
+<h1>Reference</h1>
+
+</body>
+
+</html>
